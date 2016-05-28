@@ -21,6 +21,9 @@ section {
 }
 audio,
 canvas,
+span {
+  color: #f2f2f2;;
+}
 video {
   display: inline-block;
   *display: inline;
@@ -144,7 +147,7 @@ textarea {
 }
 body {
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Arial,'Hiragino Sans GB','Microsoft Yahei',sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #333333;
@@ -484,7 +487,7 @@ a:hover {
   clear: both;
 }
 p {
-  margin: 0 0 10px;
+  margin: 0 0 0px;
 }
 .lead {
   margin-bottom: 20px;
@@ -531,7 +534,9 @@ a.text-info:hover {
 a.text-success:hover {
   color: #356635;
 }
-h1,
+h1{
+  color: red;
+}
 h2,
 h3,
 h4,
@@ -561,6 +566,7 @@ h3 {
 }
 h1 {
   font-size: 38.5px;
+  text-align: center;
 }
 h2 {
   font-size: 31.5px;
@@ -761,6 +767,11 @@ pre code {
 }
 form {
   margin: 0 0 20px;
+}
+form .div {
+  border: 1px solid #005580;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 fieldset {
   padding: 0;
@@ -967,7 +978,12 @@ input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   color: #999999;
 }
-.radio,
+.radio{
+  min-height: 20px;
+  padding-left: 20px;
+  float: left;
+  margin-right: 15px;
+}
 .checkbox {
   min-height: 20px;
   padding-left: 20px;
@@ -1345,8 +1361,8 @@ select:focus:required:invalid:focus {
   font-weight: normal;
   line-height: 20px;
   text-align: center;
-  text-shadow: 0 1px 0 #ffffff;
-  background-color: #eeeeee;
+  text-shadow: 0 1px 0 ccc;
+  background-color: #2f96b4;
   border: 1px solid #ccc;
 }
 .input-append .add-on,
@@ -1357,6 +1373,7 @@ select:focus:required:invalid:focus {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
+
 }
 .input-append .active,
 .input-prepend .active {
@@ -2523,6 +2540,7 @@ button.close {
   *zoom: 1;
   padding: 4px 12px;
   margin-bottom: 0;
+  float: right;
   font-size: 14px;
   line-height: 20px;
   *line-height: 20px;
@@ -3170,6 +3188,11 @@ input[type="submit"].btn.btn-mini {
   margin-left: 0;
   margin-bottom: 20px;
   list-style: none;
+  font-size: 16px;
+}
+.nav-logo{
+  display: inline;
+  float: left;
 }
 .nav > li > a {
   display: block;
@@ -3530,6 +3553,7 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar .container {
   width: auto;
+  margin-left: 230px;
 }
 .nav-collapse.collapse {
   height: auto;

@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.9/ref/settings/
 """
 
 import os
+import MySQLdb
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -78,11 +79,11 @@ WSGI_APPLICATION = 'CMDBWeb.wsgi.application'
 
 DATABASES = {
     'default': {
-    'ENGINE': 'django.db.backends.mysql',
-    'NAME':'dgcmdb',
-    'USER':'dgcmdb',
-    'PASSWORD':'xt*bbvfhp200451',
-    'HOST':'113.59.61.225',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME':'dgcmdb',
+        'USER':'dgcmdb',
+        'PASSWORD':'xt*bbvfhp200451',
+        'HOST':'113.59.61.225',
     }
 }
 
